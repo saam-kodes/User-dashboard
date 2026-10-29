@@ -5,7 +5,8 @@ export default function UserAuthCard({ users }) {
     <div className="p-4 bg-white rounded-lg shadow-md">
       <h2 className="text-lg font-bold mb-2">Active Users</h2>
       <ul>
-        {users.map((user) => (
+        {/* add an optional chaining  */}
+        {users?.map((user) => (
           <li key={user.id} className="text-gray-700">
             {user.name} ({user.email})
           </li>
